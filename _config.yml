@@ -8,7 +8,7 @@
 # Site settings
 title: Orion Holistic Web Development 
 email: orionholistic@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: 
   Web development, Web Design, User Experience, Digital Creation, Digital Content Managment
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
