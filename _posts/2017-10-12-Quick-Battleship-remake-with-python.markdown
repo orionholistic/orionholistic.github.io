@@ -4,6 +4,9 @@ title:  Quick Battleship remake with Python
 date:   2017-10-12 10:50:37 +0000
 categories: python
 ---
+This is a very quick and simple remake of the classic game Battleship. The user is given three chances to guess the row and column of a randomly generated position on the gameboard. 
+
+<iframe src="https://trinket.io/embed/python/913fe8a94f?outputOnly=true&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 {% highlight python %}
 from random import randint
