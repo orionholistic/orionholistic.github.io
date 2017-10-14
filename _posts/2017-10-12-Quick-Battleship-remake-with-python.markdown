@@ -4,11 +4,19 @@ title:  Quick Battleship remake with Python
 date:   2017-10-12 10:50:37 +0000
 categories: python
 ---
-This is a very quick and simple remake of the classic game Battleship. The user is given three chances to guess the row and column of a randomly generated position on the gameboard. 
+
+This is a very quick and simple remake of the classic game Battleship using a single python file. The user is given 4 chances to guess the row and column of a randomly generated position on the gameboard. Our gameboard is a 5 by 5 grid of "0"s, however you can edit this game easily and make it your own. Some examples include adding more rows/columns to make the game more challenging or use "w"s to look more like waves in the ocean. Whatever you create this game is fun to play and simple to create. 
+
+Let's get started,
+
+First play the game and try the destroy the battship yourself, when your finished you can find the code for the game below. 
 
 <iframe src="https://trinket.io/embed/python/913fe8a94f?outputOnly=true&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-{% highlight python %}
+Now that you have an idea how the game is played lets take a look at the python code,
+
+{% highlight py lineos %}
+# import library needed to create random numbers
 from random import randint
 # Create Game Board
 board = []
@@ -63,3 +71,5 @@ for turn in range(4):
         # if game loop is not ended and user did not win then print game board for next turn 
     print_board(board)
 {% endhighlight %}
+
+If you enjoyed learning how to re-create this game and would like to learn more, make sure to follow this blog or check back regularly for updates. 
