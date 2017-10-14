@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  Quick Battleship remake with Python
-date:   2017-10-14 21:34:37 +0000
-categories: new
+date:   2017-10-14 10:50:37 +0000
+categories: python
 ---
 
-{% highlight ruby %}
+{% highlight py %}
 from random import randint
 # Create Game Board
 board = []
