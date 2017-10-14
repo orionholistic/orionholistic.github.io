@@ -11,7 +11,7 @@ email: orionholistic@gmail.com
 description: 
   Web development, Web Design, User Experience, Digital Creation, Digital Content Managment
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.example.com" # the base hostname & protocol for your site
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  orionholistic
 
