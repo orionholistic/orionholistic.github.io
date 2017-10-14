@@ -5,7 +5,7 @@ date:   2017-10-12 10:50:37 +0000
 categories: python
 ---
 
-{% highlight py %}
+{% highlight python %}
 from random import randint
 # Create Game Board
 board = []
