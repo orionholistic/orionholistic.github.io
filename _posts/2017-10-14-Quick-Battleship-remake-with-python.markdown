@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Quick Battleship remake with Python
-date:   2017-10-14 10:50:37 +0000
+date:   2017-10-12 10:50:37 +0000
 categories: python
 ---
 
