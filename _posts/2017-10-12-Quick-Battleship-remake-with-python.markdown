@@ -6,7 +6,6 @@ categories: python
 ---
 
 {% highlight python %}
-
 from random import randint
 # Create Game Board
 board = []
@@ -31,7 +30,6 @@ ship_col = random_col(board)
 # Use this to print location of ship for Debug or "Cheat"
 #print ship_row
 #print ship_col
-
 # game loop set to 4 turns
 for turn in range(4):
   # show user what turn they are on
@@ -61,5 +59,4 @@ for turn in range(4):
         print "Game Over"
         # if game loop is not ended and user did not win then print game board for next turn 
     print_board(board)
-    
 {% endhighlight %}
