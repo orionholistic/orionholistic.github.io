@@ -18,6 +18,7 @@ Now that you have an idea how the game is played lets take a look at the python 
 <br>
 <br>
 This game only uses one library, the random library, so that we can create a random integer for our battleship. We are going to start by importing the randomint function from the random library. Then we create our basic game board.
+
 {% highlight py lineos %}
 # import library needed to create random numbers
 from random import randint
