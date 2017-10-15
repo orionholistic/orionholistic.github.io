@@ -5,16 +5,19 @@ date:   2017-10-12 10:50:37 +0000
 categories: python
 ---
 
-This is a very quick and simple remake of the classic game Battleship using a single python file. The user is given 4 chances to guess the row and column of a randomly generated position on the gameboard. Our gameboard is a 5 by 5 grid of "0"s, however you can edit this game easily and make it your own. Some examples include adding more rows/columns to make the game more challenging or use "w"s to look more like waves in the ocean. Whatever you create this game is fun to play and simple to create. 
+This is a very quick and simple remake of the classic game Battleship using a single python file. The user is given 4 chances to guess the row and column of a randomly generated position on the gameboard. Our gameboard is a 5 by 5 grid of "0"s, however you can edit this game easily and make it your own. Some examples include adding more rows/columns to make the game more challenging or use "w"s instead of "0"s to look more like waves in the ocean. Whatever you create this game is fun to play and simple to understand. 
 
 Let's get started,
 
 First play the game and try the destroy the battship yourself, when your finished you can find the code for the game below. 
 
 <iframe src="https://trinket.io/embed/python/913fe8a94f?outputOnly=true&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-Now that you have an idea how the game is played lets take a look at the python code,
-
+<br>
+<br>
+Now that you have an idea how the game is played lets take a look at the python code. 
+<br>
+<br>
+This game only uses one library, the random library, so that we can create a random integer for our battleship. We are going to start by importing the randomint function from the random library. Then we create our basic game board.
 {% highlight py lineos %}
 # import library needed to create random numbers
 from random import randint
@@ -29,18 +32,33 @@ def print_board(board):
     print " ".join(row)
 # prints the Game Board
 print_board(board)
+{%endhighlight%}
+<br>
+
+Now its time to put the battleship on the game board. Well use the randomint function we imported earlier to get a random location each time the game is played. This way we can play as many times as we want without getting bored.
+{% highlight py lineos %}
 # gets random number for ship row
 def random_row(board):
   return randint(0, len(board) - 1)
 # gets random number for ship col
 def random_col(board):
   return randint(0, len(board[0]) - 1)
+{%endhighlight%}
+<br>
+
+Next assign our random location to our battleship variables. If you want to print the location of our battleship to make sure the game is working you can remove the "#"s from the print statements. 
+{% highlight py lineos %}
 # assigns random row and col to ship variables
 ship_row = random_row(board)
 ship_col = random_col(board)
 # Use this to print location of ship for Debug or "Cheat"
 #print ship_row
 #print ship_col
+{%endhighlight%}
+<br>
+
+Now that we have a battleship on our gameboard its time to create the gameplay. We gave our player 4 attempts to guess the ships location. You can adjust this easily by changing the range().
+{% highlight py lineos %}
 # game loop set to 4 turns
 for turn in range(4):
   # show user what turn they are on
@@ -48,6 +66,11 @@ for turn in range(4):
   # Ask user for input as "guess"
   guess_row = int(raw_input("Guess Row: "))
   guess_col = int(raw_input("Guess Col: "))
+{% endhighlight %}
+<br>
+
+The last thing we have to do is define what happens when the users guess is correct, incorrect, off the board, or out of turns. We do this using a serious of if/else statements. 
+{% highlight py lineos %}
 # if guess is correct print Congrats and Break the Game Loop
   if guess_row == ship_row and guess_col == ship_col:
     print "Congratulations! You sank my battleship!"
